@@ -14,9 +14,20 @@ $cBlack: black;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s;
-
-  &:hover {
-    background-color: $cBlack;
-    color: $cWhite;
+  &.float{
+    &:hover{
+      box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.5);
+    }
+    
+    
+    
+    
+    
+    
+    }
   }
+  // &:hover {
+  //   background-color: $cBlack;
+  //   color: $cWhite;
+  // }
 }
