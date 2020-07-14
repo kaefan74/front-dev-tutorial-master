@@ -23,6 +23,8 @@
 }
 
 .child.v2 {
+  width: 200px;
+  height: 200px;
   background-color: palevioletred;
   -webkit-box-flex: 2;
       -ms-flex-positive: 2;
@@ -44,4 +46,16 @@
 /**
  * 上下方向のレイアウト
  */
+.parent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 /*# sourceMappingURL=style.css.map */
