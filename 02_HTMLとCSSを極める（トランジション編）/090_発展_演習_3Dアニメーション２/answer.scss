@@ -27,9 +27,7 @@ $cBlack: black;
         text-align: center;
         transition: all 0.3s;
         transform-origin: center center -25px;
-
       }
-
       & .hovering {
         background-color: $cBlack;
         color: $cWhite;
@@ -41,7 +39,6 @@ $cBlack: black;
         color: $cBlack;
         transform: rotateX(0);
       }
-
       &:hover {
         & .hovering {
           transform: rotateX(0);

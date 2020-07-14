@@ -16,7 +16,7 @@ $cBlack: black;
     cursor: pointer;
 
     &.cubic {
-      & span {
+      & span{
         position: absolute;
         top: 0;
         left: 0;
@@ -27,26 +27,22 @@ $cBlack: black;
         text-align: center;
         transition: all 0.3s;
         transform-origin: center center -25px;
-
       }
-
       & .hovering {
         background-color: $cBlack;
         color: $cWhite;
         transform: rotateX(90deg);
       }
-
-      & .default {
+      & .default{
         background-color: $cWhite;
         color: $cBlack;
         transform: rotateX(0);
       }
-
-      &:hover {
-        & .hovering {
+      &:hover{
+        & .hovering{
           transform: rotateX(0);
         }
-        & .default {
+        & .default{
           transform: rotateX(-90deg);
         }
       }
