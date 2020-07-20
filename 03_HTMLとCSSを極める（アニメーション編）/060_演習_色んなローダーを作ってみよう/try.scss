@@ -2,5 +2,30 @@
 
 .try {
   /** ここに記述しよう */
-  
+
+  .spinner{
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    margin: 100px auto;
+
+    @include animation(
+      $name :sk-rotateplane,
+      $duration: 1.2s,
+      $iteration-count:infinite,
+      $timing-function: ease-in-out
+      );
+  }
+
+  @keyframes sk-rotateplane {
+    0%{
+      transition: perstective(120px)rotateX(0deg) rotateY(0deg);
+    }
+    50%{
+      transition: perstective(120px)rotateX(-180deg)rotateY(0deg);
+    }
+    100%{
+      transition: perstective(120px)rotateX(-180deg)rotateY(-180deg);
+    }
+  }
 }
