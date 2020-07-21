@@ -1,0 +1,33 @@
+$cPink:pink;
+.container{
+  text-align: center;
+  & div{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: $cPink;
+    animation: 1.5s play infinite;
+  }
+      & .bounce3{
+        animation-delay: -0.32s;
+      }
+      & .bounce2{
+        animation-delay: -0.16s;
+      }
+}
+
+@keyframes play{
+  0%{
+    transform: scale(0);
+  }
+  40%{
+    transform: scale(1);
+  }
+  90%{
+    transform: scale(0);
+  }
+  100%{
+    transform: scale(0);
+  }
+}
