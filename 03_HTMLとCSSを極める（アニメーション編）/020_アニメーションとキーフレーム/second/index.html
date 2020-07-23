@@ -12,7 +12,15 @@
 <body>
     <div class="rect">
     </div>
-    <div><button onclick="document.querySelector('.rect').classList.toggle('paused')">paused</button></div>
+    <div><button id="btn">paused</button></div>
 </body>
 
+<script>
+    const btn=document.getElementById('btn');
+    const rect=document.querySelector('.rect');
+    btn.addEventListener('click',function(){
+        rect.classList.toggle('paused');
+    });
+  
+</script>
 </html>
