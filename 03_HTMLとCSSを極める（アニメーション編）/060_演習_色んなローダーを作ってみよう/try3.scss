@@ -1,0 +1,28 @@
+@import "mixin";
+.try{
+  .spinner{
+    width: 40px;
+      height: 40px;
+      background-color: #333;
+      margin: 100px auto;
+      animation-name: pg;
+
+    @include animation(
+      $name: pg,
+      $duration:1.2s,
+      $timing-function:ease-in-out,
+      $iteration-count:infinite,
+    );
+  }
+    @keyframes pg {
+      0%{
+        transform:perspective(120px) rotateX(0deg) rotateY(0deg);
+      }
+      50%{
+        transform: perspective(120px) rotateX(-180deg) rotateY(0deg);
+      }
+      100%{
+        transform: perspective(120px) rotateX(-180deg) rotateY(-180deg);
+      }
+    }
+}
