@@ -134,13 +134,3 @@ img {
   width: 100%;
   @extend .img-zoom;
 }
-
-.img-bg50 {
-  position: relative;
-  
-  &::before {
-    display: block;
-    content: '';
-    padding-top: 50%;
-  }
-}
